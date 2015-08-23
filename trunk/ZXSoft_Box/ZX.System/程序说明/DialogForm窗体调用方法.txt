@@ -1,0 +1,11 @@
+﻿ZX.Win.ReflectionFunction RF = new ZX.Win.ReflectionFunction();
+FP.pub_Object = "窗体标题文本$Label文本$文本框文本";
+Form Frm=RF.LoadDialogForm("ZXSystem.Function.DialogForm.dll", "ZXSystem.Function.DialogForm.Form_Main_DialogForm", FP);
+if (Frm.DialogResult == DialogResult.Yes)
+{
+    MessageBox.Show("yes");
+}
+else
+{
+    MessageBox.Show("no");
+}

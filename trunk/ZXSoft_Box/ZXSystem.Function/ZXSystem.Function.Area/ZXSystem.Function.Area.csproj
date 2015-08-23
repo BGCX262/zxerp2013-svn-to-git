@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{482E7F0A-5ABD-40D2-B5BC-1BD64A6300A4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZXSystem.Function.Area</RootNamespace>
+    <AssemblyName>ZXSystem.Function.Area</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\置祥科技ERP\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form_Main_Area.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Main_Area.Designer.cs">
+      <DependentUpon>Form_Main_Area.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form_Main_Area.resx">
+      <DependentUpon>Form_Main_Area.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ZX.Class.IO\ZX.Class.IO.csproj">
+      <Project>{E23B3A2D-B662-42BA-8295-5C2E30A80A7E}</Project>
+      <Name>ZX.Class.IO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZX.Class.Log.Write\ZX.Class.Log.WriteLog.csproj">
+      <Project>{F686AF58-2AAB-47D9-BBBB-6A4D025DE03C}</Project>
+      <Name>ZX.Class.Log.WriteLog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZX.Class.StringOption\ZX.Class.StringOption.csproj">
+      <Project>{50DD7D48-F6E8-4E34-BAD4-285FF9E5F65E}</Project>
+      <Name>ZX.Class.StringOption</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZX.Controls.DataGridView\ZX.Controls.DataGridView.csproj">
+      <Project>{348E64DE-BE49-4CE0-AB24-B4F263869D60}</Project>
+      <Name>ZX.Controls.DataGridView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZX.Controls.DotNetMagic\ZX.Controls.DotNetMagic.csproj">
+      <Project>{3D70C1FB-0EF3-4E48-B90C-5932EB78BC14}</Project>
+      <Name>ZX.Controls.DotNetMagic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZX.Controls.TreeView\ZX.Controls.TreeView.csproj">
+      <Project>{BCEFE3D0-585A-41AD-9FEB-1F2F85912BED}</Project>
+      <Name>ZX.Controls.TreeView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZX.Win.FunctionParameter\ZX.Win.FunctionParameter.csproj">
+      <Project>{F858D1E0-4DFC-4470-A2C8-DF1E961F5540}</Project>
+      <Name>ZX.Win.FunctionParameter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZX.Win.SetToolBarIcon\ZX.Win.SetToolBarIcon.csproj">
+      <Project>{E22E2A67-CC18-42F8-A763-89441DE1783D}</Project>
+      <Name>ZX.Win.SetToolBarIcon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZX.ZXSystem.DBUtility\ZX.ZXSystem.DBUtility.csproj">
+      <Project>{0988C62E-247F-471F-A183-DB509C7A3839}</Project>
+      <Name>ZX.ZXSystem.DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZX.ZXSystem.Win\ZX.ZXSystem.Win.csproj">
+      <Project>{424AEF5B-A464-4E49-9842-06A6E6B4A82A}</Project>
+      <Name>ZX.ZXSystem.Win</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

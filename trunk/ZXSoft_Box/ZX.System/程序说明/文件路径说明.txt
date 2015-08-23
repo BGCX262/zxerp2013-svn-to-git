@@ -1,0 +1,20 @@
+﻿1、图片文件夹
+	Images
+	Images\Backgroup：为动态调用时的登录图片及主界面背景图及小窗口Title图
+	Images\TooBarIco：为系统工具栏图标
+	Images\MenuIcons: 为菜单图标文件夹
+2、临时文件夹
+	TempFile
+3、功能模块保存查询前进后退历史文件夹
+	TempFile\[功能编号]
+4、项目文档
+	WorkFiles\[项目编号]
+5、功能模块DataGridView列显示设置
+	DGColumnSet\[功能编号].ini
+
+6、功能帮助
+	Help
+	
+７、模板文件
+	System\TemplateFile\
+	

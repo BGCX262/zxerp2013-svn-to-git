@@ -1,0 +1,159 @@
+﻿        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            switch (e.ClickedItem.Text)
+            {
+                case "显示":
+                    ShowLeft();
+                    break;
+                case "隐藏":
+                    HideLeft();
+                    break;
+                case "查询":
+                    FindData();
+                    break;
+                case "保存":
+                    SaveDataToDataBase();
+                    break;
+                case "另存":
+                    SaveDataToExcel();
+                    break;
+                case "复制":
+                    CopyData();
+                    break;
+                case "输出":
+                    OutPutDataToExcel();
+                    break;
+                case "升序":
+                    SortUP();
+                    break;
+                case "降序":
+                    SortDown();
+                    break;
+                case "后退":
+                    BackUp();
+                    break;
+                case "前进":
+                    Forward();
+                    break;
+                case "检索":
+                    CheckData();
+                    break;
+                case "列头":
+                    SetColumn();
+                    break;
+                case "列宽":
+                    SetColumnWide();
+                    break;
+                case "帮助":
+                    FunctionHelp();
+                    break;
+                case "关闭":
+                    this.Close();
+                    break;
+            }
+        }
+        /// <summary>
+        /// 显示
+        /// </summary>
+        private void ShowLeft()
+        {
+
+        }
+        /// <summary>
+        /// 隐藏
+        /// </summary>
+        private void HideLeft()
+        {
+
+        }
+        /// <summary>
+        /// 查询数据
+        /// </summary>
+        private void FindData()
+        {
+ 
+        }
+        /// <summary>
+        /// 保存数据结果到数据库作业审计证据
+        /// </summary>
+        private void SaveDataToDataBase()
+        { 
+        
+        }
+        /// <summary>
+        /// 保存数据到Excel
+        /// </summary>
+        private void SaveDataToExcel()
+        { 
+            object sender=null;EventArgs e=null;
+            this.dataGridViewC1.SaveAsFileToExcel(sender, e);
+        }
+        /// <summary>
+        /// 复制数据
+        /// </summary>
+        private void CopyData()
+        { 
+        
+        }
+        /// <summary>
+        /// 输出文件到Excel
+        /// </summary>
+        private void OutPutDataToExcel()
+        { 
+        
+        }
+        /// <summary>
+        /// 序升
+        /// </summary>
+        private void SortUP()
+        {
+ 
+        }
+        /// <summary>
+        /// 降序
+        /// </summary>
+        private void SortDown()
+        {
+ 
+        }
+        /// <summary>
+        /// 操作后退
+        /// </summary>
+        private void BackUp()
+        {
+ 
+        }
+        /// <summary>
+        /// 操作前进
+        /// </summary>
+        private void Forward()
+        {
+
+        }
+        /// <summary>
+        ///检索数据
+        /// </summary>
+        private void CheckData()
+        {
+        }
+       /// <summary>
+        /// 设置列显示
+        /// </summary>
+        private void SetColumn()
+        {
+ 
+        }
+        /// <summary>
+        ///设置自动列宽
+        /// </summary>
+        private void SetColumnWide()
+        { 
+        
+        }
+        /// <summary>
+        /// 帮助
+        /// </summary>
+        private void FunctionHelp()
+        { 
+        
+        }

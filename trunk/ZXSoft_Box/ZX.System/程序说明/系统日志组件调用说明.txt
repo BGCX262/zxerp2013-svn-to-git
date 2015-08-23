@@ -1,0 +1,16 @@
+﻿ 
+ 1、操作日志：
+ 2、错误日志：
+ 
+ 
+	try
+	{ 
+		//操作日志
+		ZX.Class.Log.WriteLog.Write("ZXSystem.Function.FunManage", "SaveSet", "保存数据库服务器设置成功", ZX.Class.Log.NormalLogType.InfoLog);
+	}
+	catch (Exception ex)
+	{
+		//错误日志
+		ZX.Class.Log.WriteLog.Write("ZXSystem.Function.FunManage", "SaveSet", "保存功能列表到数据库出错", ex, ZX.Class.Log.ErrorLogType.FatalLog);
+	}
+

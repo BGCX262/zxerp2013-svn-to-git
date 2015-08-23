@@ -1,0 +1,22 @@
+﻿ DataGridView所在窗体功能前进与后退
+ 文件格式: File$001.xml File$002.xml 
+ 当前文件: File$003Cur.xml 
+ 使用方法：
+ 
+ 定义全局窗体级变量(以便各模块调用)
+ ZX.Controls.DataGridViewOperation.FunctionForwardBack FFB = new ZX.Controls.DataGridViewOperation.FunctionForwardBack();
+ 
+ 在窗体启动时执行(以便删除上次未删除的临时保存文件)
+ FFB.DeleteXmlFile(功能模块ID);
+ 
+ 当数据源DataSource改变时
+ FFB.SaveXmlFile(功能模块ID, DataGridView控件名, 前进控件, 后退控件);
+ 
+ 在窗体退出时执行(以便删除临时保存文件)
+ FFB.DeleteXmlFile(功能模块ID)
+ 
+ 在点击“前进”时执行
+ FFB.DataGridViewSetData(功能模块ID, DataGridView控件名, ZX.Controls.DataGridViewOperation.FunctionForwardBack.ForwardBackOption.Forward, 前进控件, 后退控件);
+ 
+ 在点击“后退”时执行
+ FFB.DataGridViewSetData(功能模块ID, DataGridView控件名, ZX.Controls.DataGridViewOperation.FunctionForwardBack.ForwardBackOption.Back, 前进控件, 后退控件);

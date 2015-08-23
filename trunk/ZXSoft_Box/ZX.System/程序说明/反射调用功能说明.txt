@@ -1,0 +1,10 @@
+﻿ZX.Win.FunctionParameter FP = this.Tag;
+FP.ToolStripitemDisplayStyle = ToolStripItemDisplayStyle.ImageAndText;
+FP.functionFormID = "18";
+ZX.Win.ReflectionFunction RF = new ZX.Win.ReflectionFunction();
+Form frm = RF.LoadMdiForm("ZXSystem.Function.FunManage.dll", "ZXSystem.Function.FunManage.Form_Main_FunManage", this, FP);
+TabPage TP = new TabPage(frm.Text);
+TP.Tag = frm;
+this.TabControFormList.TabPages.Add(TP);
+this.TabControFormList.SelectedTab = TP;
+TP.Select();
